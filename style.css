@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+.btn1{
+    width: 18rem;
+    height:18rem;
+    background-color: green;
+    border:7px solid black;
+    border-radius: 36px;
+}
+.btn2{
+    width: 18rem;
+    height:18rem;
+    background-color: red;
+    border:7px solid black;
+    border-radius: 36px;
+}
+.btn3{
+    width: 18rem;
+    height:18rem;
+    background-color: yellow;
+    border:7px solid black;
+    border-radius: 36px;
+}
+.btn4{
+    width: 18rem;
+    height:18rem;
+    background-color: rgb(95, 95, 147);
+    border:7px solid black;
+    border-radius: 36px;
+}
+.butoanele{
+  display: grid;
+  grid-template-columns: repeat(2,18rem);
+  gap:3rem;
+  /* justify-content: center;  */
+}
+@media(max-width:620px){
+  .butoanele{
+    display: grid;
+    grid-template-columns: repeat(1,18rem);
+   
+    
+  }
+}
+h1{
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.joculet{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap:8px;
+}
+.btn1:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.btn2:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .btn3:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .btn4:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
